@@ -1,0 +1,16 @@
+<!-- myapp/templates/myapp/my_model_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>company data List</title>
+</head>
+<body>
+    <h1>company_data List</h1>
+    <ul>
+        {% for my_model in data %}
+            <li>{{ my_model.company_name }} - {{ my_model.company_location }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
